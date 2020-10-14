@@ -15,7 +15,7 @@ import io.cucumber.junit.CucumberOptions;
 		plugin={"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"html:target/cucumber-html-reports", 
 				"json:target/cucumber-html-reports/cucumber.json"}
-		,tags={"@ValidCredwithExcel"}
+		,tags={"@Unittests"}
 		)
 
 public class Firstfeature_runner { // This is feature runner

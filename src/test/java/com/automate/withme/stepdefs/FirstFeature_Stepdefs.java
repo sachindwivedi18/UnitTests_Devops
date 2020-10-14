@@ -93,7 +93,7 @@ public class FirstFeature_Stepdefs {
 		 driver = new ChromeDriver();
 		
 		//Demo E-commerce APP
-		driver.get("http://localhost:8181/");
+		driver.get("file:///C:/Users/Dell/Documents/Demo_DEVOPS/Online_Fruits_And_Veggies_DEVOPS-main/index.html");
 		
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);

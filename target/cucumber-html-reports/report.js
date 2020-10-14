@@ -5,7 +5,7 @@ formatter.feature({
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@Regression"
+      "name": "@Unittests"
     }
   ]
 });
@@ -13,6 +13,9 @@ formatter.background({
   "name": "",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.beforestep({
   "status": "passed"
@@ -38,19 +41,19 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Regression"
+      "name": "@Unittests"
     },
     {
-      "name": "@ValidCredwithExcel"
+      "name": "@ValidCred"
     }
   ]
 });
 formatter.step({
-  "name": "Read data from spreadsheet and perform login",
+  "name": "User gives right \"Online_User\" as Username and \"Online_User\" as Password",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.automate.withme.stepdefs.FirstFeature_Stepdefs.Excel_sheet()"
+  "location": "com.automate.withme.stepdefs.FirstFeature_Stepdefs.User_gives_right_credentials(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -64,6 +67,65 @@ formatter.step({
 });
 formatter.match({
   "location": "com.automate.withme.stepdefs.FirstFeature_Stepdefs.User_should_see_success_message()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.beforestep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User lauches the App",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.automate.withme.stepdefs.FirstFeature_Stepdefs.User_lauches_the_App()"
+});
+formatter.embedding("image/png", "embedded1.png", "Invalid Credentials");
+formatter.write("Success Login");
+formatter.result({
+  "status": "passed"
+});
+formatter.beforestep({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Invalid Credentials",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Unittests"
+    },
+    {
+      "name": "@InValidCred"
+    }
+  ]
+});
+formatter.step({
+  "name": "User gives invalid credentials \"automate\" as Username and \"withme\" as Password",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.automate.withme.stepdefs.FirstFeature_Stepdefs.User_gives_invalid_credentials(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.beforestep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should see Error message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.automate.withme.stepdefs.FirstFeature_Stepdefs.User_should_see_Error_smessage()"
 });
 formatter.result({
   "status": "passed"
