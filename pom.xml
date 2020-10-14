@@ -13,7 +13,7 @@
     <version>2.19.1</version>
     <configuration>
         <suiteXmlFiles>
-            <suiteXmlFile></suiteXmlFile>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
         </suiteXmlFiles>
     </configuration>
 	</plugin>
@@ -27,13 +27,14 @@
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-java</artifactId>
     <version>5.5.0</version>
+	<scope> test</scope>
 </dependency>
   <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-junit</artifactId>
     <version>5.5.0</version>
-    <scope>test</scope>
+    <scope> test</scope>
 </dependency>
   <!-- https://mvnrepository.com/artifact/junit/junit -->
 <dependency>
