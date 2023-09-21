@@ -87,7 +87,7 @@ public class FirstFeature_Stepdefs {
 	public void User_lauches_the_App() throws InterruptedException{
 		
 		//Driver exe config
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\Documents\\CI_CD\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Documents\\CI_CD\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 			
 		//Instansiation the WebDriver Instance
 		 driver = new ChromeDriver();
